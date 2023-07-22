@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Flip Effect</title>
+    <style type="text/css">
+        body{
+            overflow: hidden;
+            background: #000000;
+            background-size: 100% 100%;
+        }
+        #album{
+            width: 800px;
+            height: 600px;
+            margin: 5% auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="album">
+        <div style="background: url('cover.jpg'); background-size: 100% 100%;"></div>
+        <div style="background: url('1.jpg'); background-size: 100% 100%;"></div>
+        <div style="background: url('scn.jpeg'); background-size: 100% 100%;"></div>
+        <div style="background: url('trd.jpg'); background-size: 100% 100%;"></div>
+        <div style="background: url('11.jpg'); background-size: 100% 100%;"></div>
+        <div style="background: url('13.jpg'); background-size: 100% 100%;"></div>
+        <div style="background: url('14.webp'); background-size: 100% 100%;"></div>
+        <div style="background: url('15.jpg'); background-size: 100% 100%;"></div>
+        <div style="background: url('scn.jpeg'); background-size: 100% 100%;"></div>
+        <div style="background: url('16.jpg'); background-size: 100% 100%;"></div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="turn.js"></script>
+    <script>
+        $('#album').turn({gradients: true, acceleration: true});
+    </script>
+</body>
+</html>
